@@ -19,10 +19,6 @@ def generate_password():
     password_list = password_letters + password_numbers + password_symbols
     shuffle(password_list)
 
-    # password = ""
-    # for letter in password_list:
-    #     password += letter
-
     password = "".join(password_list)
 
     password_entry.delete(0, END)
